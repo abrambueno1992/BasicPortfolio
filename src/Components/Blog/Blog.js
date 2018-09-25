@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Navigation from '../Navigation/Navigation';
+import './Blog.css';
 
 class Blog extends Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class Blog extends Component {
     }
     render() {
       return (
-        <div>
+        <div className="MainBlog">
             <Navigation current={this.props.match.path}/>
           <h1>Hello, Blog</h1>
         </div>

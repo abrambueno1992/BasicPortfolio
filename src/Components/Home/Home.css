@@ -3,12 +3,12 @@
 
 .Home {
     /* background: #222222; */
-    background: black;
+    background: #eee;
 
     height: 100%;
     border: 2px solid rebeccapurple;
     box-sizing: content-box;
-    display: inline;
+    /* display: inline; */
     /* margin-top: 20%; */
 }
 .Intro {

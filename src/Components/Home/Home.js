@@ -8,21 +8,15 @@ class Home extends Component {
     super(props);
 
   }
-
-
   render() {
-
     return (
       <div className="Home" >
-
         <Navigation current={this.props.match.path} />
-        {/*  */}
         <div className="Intro">
           <h1 className="Text">Hello, my name is Abraham Bueno, and I'm a FULL STACK web developer</h1>
           <h2 className="Text">The Stack I use is Mongo DB, Express, React, Redux, and Node.</h2>
         </div>
         <Particles
-
           params={{
             particles: {
               number: {
@@ -58,17 +52,10 @@ class Home extends Component {
         </div>
         <div className="Two">
         </div>
-        {/*<div className="One">*/}
-        {/*</div>*/}
-        {/*<div className="Two">*/}
-        {/*</div>*/}
+       
       </div>
     );
   }
 }
-// const Intro = () => {
-//   return (
 
-//   )
-// }
 export default Home
