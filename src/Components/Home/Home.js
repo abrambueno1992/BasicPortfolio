@@ -1,53 +1,59 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Home.css'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Particles from 'react-particles-js';
 import Navigation from '../Navigation/Navigation';
+
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {items: ['hello', 'world', 'click', 'me']};
-    this.handleAdd = this.handleAdd.bind(this);
+
   }
 
-  handleAdd() {
-    const newItems = this.state.items.concat([
-      prompt('Enter some text')
-    ]);
-    this.setState({items: newItems});
-  }
-
-  handleRemove(i) {
-    let newItems = this.state.items.slice();
-    newItems.splice(i, 1);
-    this.setState({items: newItems});
-  }
 
   render() {
-    // const items = this.state.items.map((item, i) => (
-    //   <div key={item} onClick={() => this.handleRemove(i)}>
-    //     {item}
-    //   </div>
-    // ));
 
     return (
       <div className="Home" >
-       {/* <button onClick={this.handleAdd}>Add Item</button>
-        
-        <ReactCSSTransitionGroup
-                  transitionName="example"
-                  transitionEnterTimeout={500}
-                  transitionLeaveTimeout={300}>
-        
-                  
-        {items}
-                
-        </ReactCSSTransitionGroup> */}
-        <Navigation current={this.props.match.path}/>
-        <div animationName="example" className="Intro">
+
+        <Navigation current={this.props.match.path} />
+        {/*  */}
+        <div className="Intro">
           <h1 className="Text">Hello, my name is Abraham Bueno, and I'm a FULL STACK web developer</h1>
           <h2 className="Text">The Stack I use is Mongo DB, Express, React, Redux, and Node.</h2>
-
         </div>
+        <Particles
+
+          params={{
+            particles: {
+              number: {
+                value: 120
+              },
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: "#3CA9D1",
+                  blur: 0
+                }
+              }
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: 'grab'
+                }
+              }
+
+            }
+
+          }}
+          style={{
+            width: '100%',
+            height: '20%',
+            background: '#024'
+            // backgroundImage: `url(${logo})` 
+          }}
+        />
         <div className="One">
         </div>
         <div className="Two">
@@ -60,5 +66,9 @@ class Home extends Component {
     );
   }
 }
+// const Intro = () => {
+//   return (
 
+//   )
+// }
 export default Home

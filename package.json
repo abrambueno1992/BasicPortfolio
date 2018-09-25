@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "iguazu": "^2.2.0",
+    "particlesjs": "^2.2.3",
     "react": "^16.5.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.5.1",
+    "react-particles-js": "^2.3.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

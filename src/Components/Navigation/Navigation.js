@@ -52,7 +52,7 @@ class Navigation extends Component {
 
         return (
             <div >
-                <Breadcrumb size="huge" style={{ height: "3%", marginLeft: "1%", display: 'flex' }}>
+                <Breadcrumb size="massive" style={{ height: "3%", marginLeft: "1%", display: 'flex' }}>
                     {this.state.index !== 0 ?
                         <div style={{display:'inline-flex'}} >
                             <Breadcrumb.Section>
